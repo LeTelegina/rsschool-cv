@@ -54,7 +54,7 @@ $(document).ready(function() {
 ```
 
 ## Experience
-Realization of additional functionality for sites implemented on the Tilda constructor: accordions, slider, page switcher, base animation, etc.
+Realization of additional functionality for sites implemented on the Tilda constructor: accordions, slider, page switcher, base animation and etc.
 
 Examples of sites:  [Holy Guns](https://dom-uyta.ru), [Dom Yyta](https://dom-uyta.ru), [Dom Yyta - Lendinf](https://design.dom-uyta.ru)
 
