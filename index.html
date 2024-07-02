@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>CV. Telegina Elena</title>
+</head>
+
+<header>
+    // Шапка сайта.
+</header>
+
+<body>
+    <main>
+        <h1>Telegina Elena</h1>
+        <h2>Contact Information</h2>
+            <ul>
+                <li><b>Location:</b> Russian, Ekaterinburg</li>
+                <li><b>Email</b>:</b> <a href="mail:letelegina@mail.ru">letelegina@mail.ru</a></li>
+                <li><b>Telegram:</b> @LeTelegina</li>
+                <li><b>GitHub:</b> <a href="https://github.com/LeTelegina">letelegina</a></li>
+                <li><b>Discord:</b> <a href="https://discordapp.com/users/916930436431753246">letelegina</a></li>
+            </ul>
+        <h2>About Me</h2>
+            <p>Currently working as a system engineer in a provider company. I am involved in the operation of a number of user services.</p>
+            <p>I am fond of web design, develop sites from scratch and collect them on constructors, if necessary, add functionality code. I want to better understand the frontend development that would make their sites more functional and possibly coordinately change the direction of its activities.</p>
+        <h2>Skills</h2>
+            <ul>
+                <li>Linux (Debian, Ubuntu)</li>
+                <li>Figma, VSCode</li>
+                <li>Git, GitHub, Bitbucket</li>
+                <li>Basic: HTML/CSS, JavaScript</li>
+            </ul>
+        <h2>Code Example</h2>
+            <code>$(document).ready(function() {
+                function updateOverflow() {
+                if ($(window).width() < 980) {
+                    $('.rec654547484, .rec654544000, .rec654550587').css('overflow', 'hidden');
+                } else {
+                    $('.rec654547484, .rec654544000, .rec654550587').css('overflow', 'auto'); 
+                }
+                }
+                
+                $(window).resize(updateOverflow);
+                updateOverflow();
+            
+                $('.slidebtn a').click(function() {
+                var $target = $(this).attr('href').slice(1);
+            
+                if ($('.uc-' + $target).is(':visible')) {
+                    $('.uc-' + $target).fadeOut(0);
+                    $(this).removeClass('bactive');
+                } else {
+                    $('[class*="uc-slide"]').fadeOut(0);
+                    $('.uc-' + $target).fadeIn(0); 
+                    $('.slidebtn a').removeClass('bactive');
+                    $(this).addClass('bactive');
+                }
+                t_lazyload_update();
+                });
+            
+                $('[class*="uc-slide"]').not('.uc-slide2').fadeOut(0);
+                $('[href="#slide2"]').addClass('bactive'); 
+                $('.uc-slide2').fadeIn(0); 
+            });</code>
+        <h2>Experience</h2>
+            <p>Realization of additional functionality for sites implemented on the Tilda constructor: accordions, slider, page switcher, base animation and etc.</p>
+            <p>Examples of sites: <a href="https://holyguns.ru">Holy Guns</a>, <a href="https://dom-uyta.ru">Dom Yyta</a> , <a href="https://design.dom-uyta.ru">Dom Yyta - Lending</a></p>
+        <h2>Education</h2>
+            <h3>UX/UI Designer</h3>
+                <p>Trained at UpRock School of Design in 2021 as a UX/UI designer.</p> 
+            <h3>Front-end development</h3>
+            <p>Self-study of frontend development on various free courses and youtube</p>
+        <h2>Languages</h2>
+            <ul>
+                <li>Russian, native speaker)</li>
+                <li>English (A1), reading technical literature</li>
+            </ul>
+    </main>
+</body>
+
+
+<footer>
+    // Подвал сайта
+</footer>
+
+</html>
