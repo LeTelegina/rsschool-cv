@@ -25,36 +25,6 @@
                 <li>Git, GitHub, Bitbucket</li>
                 <li>Basic: HTML/CSS, JavaScript</li>
             </ul>
-        <h2>Code Example</h2>
-            <pre><code>$(document).ready(function() {
-    function updateOverflow() {
-        if ($(window).width() &lt;980) {
-            $('.rec654547484, .rec654544000, .rec654550587').css('overflow', 'hidden');
-        } else {
-            $('.rec654547484, .rec654544000, .rec654550587').css('overflow', 'auto');
-        }
-    }
-    $(window).resize(updateOverflow);
-    updateOverflow();
-
-    $('.slidebtn a').click(function() {
-        var $target = $(this).attr('href').slice(1);
-        if ($('.uc-' + $target).is(':visible')) {
-            $('.uc-' + $target).fadeOut(0);
-            $(this).removeClass('bactive');
-        } else {
-            $('[class*="uc-slide"]').fadeOut(0);
-            $('.uc-' + $target).fadeIn(0);
-            $('.slidebtn a').removeClass('bactive');
-            $(this).addClass('bactive');
-        }
-        t_lazyload_update();
-    });
-
-    $('[class*="uc-slide"]').not('.uc-slide2').fadeOut(0);
-    $('[href="#slide2"]').addClass('bactive');
-    $('.uc-slide2').fadeIn(0);
-});</code></pre>
         <h2>Experience</h2>
             <p>Realization of additional functionality for sites implemented on the Tilda constructor: accordions, slider, page switcher, base animation and etc.</p>
             <p>Examples of sites: <a href="https://holyguns.ru">Holy Guns</a>, <a href="https://dom-uyta.ru">Dom Yyta</a>, <a href="https://design.dom-uyta.ru">Dom Yyta - Lending</a></p>
