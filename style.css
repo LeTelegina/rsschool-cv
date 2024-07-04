@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth; 
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: #131313;
+    background: #F4F4F4;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;  
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: stretch;
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+  }
+  
+  .header{
+    position: fixed;
+    background-color: #F4F4F4;    
+    top: 0;  
+    z-index: 100;  
+    width: 100%;  
+  }
+  
+  .link-header {
+    text-decoration: none;
+    color: #131313;
+  }
+  
+  .link-experiance-section {
+    text-decoration: none;
+    color: #576ddb;
+    transition: color 0.5s;
+  }
+  
+  .link-experiance-section:hover{
+    color: #183df6;
+  }
+  
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-link {
+    padding: 0 20px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #131313;
+    transition: color 0.5s;
+  }
+  
+  .nav-link:hover {
+    color: #576ddb;
+  }
+  
+  .main {
+    flex: 1;
+    margin-top: 150px;
+  }
+  
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skills-section,.contact-section, .lang-section, .image-profile-section{
+    width: 28%;
+    margin-bottom: 80px;
+  }
+  
+  .education-section,.experiance-section, .code-section, .about-profile-section{
+    width: 58%;
+    margin-bottom: 80px;
+  }
+  
+  .title-profile-section{
+    font-size: 76px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .title-section{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .width-text-section{
+    width: 70%;
+  }
+  
+  .underline-title-section{
+    border-bottom: 3px solid #576ddb;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .description-profile-section{
+    color: #576ddb;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  .text-uppercase{
+    text-transform: uppercase;
+  }
+  
+  .footer {
+    background: #000;
+    color:#F4F4F4;
+  }
+  
+  .copyrigth-footer {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+  }
+  
+  .link-footer {
+    text-decoration: none;
+    color: #F4F4F4;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-section,.contact-section, .lang-section, .image-profile-section, .education-section,.experiance-section, .code-section, .about-profile-section {
+      width: 100%;
+    }
+  }
