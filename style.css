@@ -119,6 +119,18 @@
     margin-bottom: 10px;
   }
   
+  .code-section-pre {
+    padding: 20px;
+    background: #FFFFFF;
+    white-space: pre-wrap; /* Перенос строк внутри блока */
+    word-wrap: break-word; /* Переносит слова, если они длиннее контейнера */
+}
+
+  .code-content {
+    display: block;
+}
+
+
   .description-profile-section{
     color: #576ddb;
     font-size: 20px;
@@ -146,10 +158,4 @@
   .link-footer {
     text-decoration: none;
     color: #F4F4F4;
-  }
-  
-  @media (max-width: 768px) {
-    .skills-section,.contact-section, .lang-section, .image-profile-section, .education-section,.experiance-section, .code-section, .about-profile-section {
-      width: 100%;
-    }
   }
