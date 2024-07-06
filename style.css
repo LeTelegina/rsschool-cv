@@ -201,7 +201,23 @@
     }
   }
 
+  @media (max-width: 768px) {
+
+    .header .container {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+    .nav-link {
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+
   @media (max-width: 640px) {
+    .header .container {
+      justify-content:space-between;
+  }
 
   .container, .main-container {
       flex-direction: row;
@@ -213,11 +229,6 @@
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-}
-
-.nav-link {
-  padding: 10px;
-  font-size: 12px;
 }
 
   .skills-section, .contact-section, .lang-section, .image-profile-section,
