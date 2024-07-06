@@ -151,7 +151,27 @@
   .text-uppercase{
     text-transform: uppercase;
   }
+
+  .main-list {
+    list-style: none;
+    padding: 0;
+  }
   
+  .main-list-item {
+    margin-bottom: 10px;
+  }
+
+  .main-list-link {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #131313;
+    transition: color 0.5s;
+  }
+  
+  .main-list-link:hover {
+    color: #576ddb;
+  }
+
   .footer {
     background: #000;
     color:#F4F4F4;
