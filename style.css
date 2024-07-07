@@ -2,251 +2,250 @@
     box-sizing: border-box;
   }
   
-  html {
-    scroll-behavior: smooth; 
+html {
+  scroll-behavior: smooth; 
   }
   
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
-    min-height: 100vh;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-    color: #131313;
-    background: #F4F4F4;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: #131313;
+  background: #F4F4F4;
+}
   
-  .container {
-    display: flex;
-    justify-content: space-between;  
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    align-content: stretch;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+.container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;  
+  flex-wrap: wrap; 
+  align-content: stretch;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
   
-  .header{
-    position: fixed;
-    background-color: #F4F4F4;    
-    top: 0;  
-    z-index: 100;  
-    width: 100%;  
-    height: 80px;
-    align-content: center;
-  }
+.header{
+  position: fixed;
+  top: 0;  
+  z-index: 100;  
+  width: 100%;  
+  height: 80px;
+  background-color: #F4F4F4;    
+  align-content: center;
+}
   
+.link-header {
+  text-decoration: none;
+  color: #131313;
+}
+  
+.link-experiance-section {
+  text-decoration: none;
+  color: #576ddb;
+  transition: color 0.5s;
+}
+  
+.link-experiance-section:hover{
+  color: #183df6;
+}
+  
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+  
+.nav-link {
+  padding: 0 20px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #131313;
+  transition: color 0.5s;
+}
+  
+.nav-link:hover {
+  color: #576ddb;
+}
+  
+.main {
+  flex: 1;
+  margin-top: 160px;
+}
+  
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.about-profile-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-section,
+.contact-section, 
+.lang-section, 
+.image-profile-section{
+  width: 28%;
+  margin-bottom: 80px;
+}
+
+.image-profile {
+  width: 100%;
+}
+  
+.education-section,
+.experiance-section, 
+.code-section, 
+.about-profile-section{
+  width: 58%;
+  margin-bottom: 80px;
+}
+  
+.title-profile-section{
+  margin: 0;
+  font-size: 76px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+  
+.title-section{
+  margin-top: 80px;
+  font-size: 30px;
+  font-weight: 400;
+}
+  
+.width-text-section{
+  width: 80%;
+}
+  
+.underline-title-section{
+  border-bottom: 3px solid #576ddb;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+  
+.code-section-pre {
+  padding: 20px;
+  white-space: pre-wrap; /* Перенос строк внутри блока */
+  word-wrap: break-word; /* Переносит слова, если они длиннее контейнера */
+  background: #FFFFFF;
+}
+
+.code-content {
+  display: block;
+}
+
+.description-profile-section{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #576ddb;
+}
+  
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.main-list {
+  list-style: none;
+  padding: 0;
+}
+  
+.main-list-item {
+  margin-bottom: 10px;
+}
+
+.main-list-link {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #131313;
+  transition: color 0.5s;
+}
+  
+.main-list-link:hover {
+  color: #576ddb;
+}
+
+.footer {
+  background: #000;
+  color:#F4F4F4;
+}
+  
+.copyrigth-footer {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+}
+  
+.link-footer {
+  text-decoration: none;
+  color: #F4F4F4;
+}
+
+@media (max-width: 980px) {
   .link-header {
-    text-decoration: none;
-    color: #131313;
-  }
-  
-  .link-experiance-section {
-    text-decoration: none;
-    color: #576ddb;
-    transition: color 0.5s;
-  }
-  
-  .link-experiance-section:hover{
-    color: #183df6;
-  }
-  
-  .nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
   
   .nav-link {
-    padding: 0 20px;
+    padding: 10px;
     font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #131313;
-    transition: color 0.5s;
-  }
-  
-  .nav-link:hover {
-    color: #576ddb;
-  }
-  
-  .main {
-    flex: 1;
-    margin-top: 160px;
-  }
-  
-  .main-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .about-profile-section {
-    display: flex;
-    flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 100px;
   }
 
-  .skills-section,
-  .contact-section, 
-  .lang-section, 
-  .image-profile-section{
-    width: 28%;
-    margin-bottom: 80px;
-  }
-
-  .image-profile {
-    width: 100%;
-  }
-  
-  .education-section,
-  .experiance-section, 
-  .code-section, 
-  .about-profile-section{
-    width: 58%;
-    margin-bottom: 80px;
-  }
-  
-  .title-profile-section{
-    font-size: 76px;
-    font-weight: 400;
-    text-transform: uppercase;
+  .header .container {
+    flex-direction: row;
+    justify-content: center;
     margin: 0;
   }
-  
-  .title-section{
-    margin-top: 80px;
-    font-size: 30px;
-    font-weight: 400;
+
+  .nav-list{
+    margin-top: 0;
   }
-  
-  .width-text-section{
-    width: 80%;
-  }
-  
-  .underline-title-section{
-    border-bottom: 3px solid #576ddb;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .code-section-pre {
-    padding: 20px;
-    background: #FFFFFF;
-    white-space: pre-wrap; /* Перенос строк внутри блока */
-    word-wrap: break-word; /* Переносит слова, если они длиннее контейнера */
+
+  .nav-link {
+    padding: 10px;
+    font-size: 12px;
+    }
+
 }
 
-  .code-content {
-    display: block;
-}
-
-  .description-profile-section{
-    color: #576ddb;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-  }
-  
-  .text-uppercase{
-    text-transform: uppercase;
-  }
-
-  .main-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .main-list-item {
-    margin-bottom: 10px;
-  }
-
-  .main-list-link {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #131313;
-    transition: color 0.5s;
-  }
-  
-  .main-list-link:hover {
-    color: #576ddb;
-  }
-
-  .footer {
-    background: #000;
-    color:#F4F4F4;
-  }
-  
-  .copyrigth-footer {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 14px;
-  }
-  
-  .link-footer {
-    text-decoration: none;
-    color: #F4F4F4;
-  }
-
-  @media (max-width: 980px) {
-    .link-header {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-  
-    .nav-link {
-      padding: 10px;
-      font-size: 14px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .header {
-      height: 100px;
-    }
-
-    .header .container {
-      flex-direction: row;
-      justify-content: center;
-      margin: 0;
-  }
-
-    .nav-list{
-      margin-top: 0;
-    }
-
-    .nav-link {
-      padding: 10px;
-      font-size: 12px;
-    }
-
-  }
-
-  @media (max-width: 640px) {
-
+@media (max-width: 640px) {
   .container, 
   .main-container {
-      align-items: center;
+    align-items: center;
   }
 
   .nav-list {
     padding: 0;
     width: 100%;
-}
+  }
 
-.nav-link{
-  padding: 8px;
-  font-size: 12px;
-}
+  .nav-link{
+    padding: 8px;
+    font-size: 12px;
+  }
 
   .skills-section, 
   .contact-section, 
@@ -256,17 +255,16 @@
   .experiance-section, 
   .code-section, 
   .about-profile-section {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .width-text-section {
     width: 100%;
-}
+  }
 }
 
 @media (max-width: 480px) {
-
   .header {
     height: 180px;
   }
@@ -282,9 +280,9 @@
 
   .container, 
   .main-container {
-      flex-direction: row;
-      align-items: center;
-      }
+    flex-direction: row;
+    align-items: center;
+  }
     
   .nav-list {
     display: flex;
@@ -304,5 +302,5 @@
   .title-section {
     margin-top: 50px;
     font-size: 24px;
-}
+  }
 }
