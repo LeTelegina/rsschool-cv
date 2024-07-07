@@ -226,12 +226,19 @@
   }
 
   @media (max-width: 640px) {
+<<<<<<< HEAD
 
   .header {
     height: 200px;
   }
 
   .header .container {
+=======
+    .header {
+        height: 200px;
+  }
+    .header .container {
+>>>>>>> 0ba63072ac3989268e6a2b7e830aaea450ee2397
       justify-content:space-between;
   }
 
